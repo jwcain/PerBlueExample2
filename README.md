@@ -1,6 +1,6 @@
 # Per Blue Front End Developer position Code Example
 
-This repo is for my tech demo during the inteview process. The goal of this project was to begin porting a puzzle game I have been working on to mobile, as well as providing an in-game level editor that players and myself may use.
+This repo is for my tech demo during the inteview process. This project aims to port a puzzle game of mine to mobile, as well as providing an in-game level editor that players may use.
 A WebGL build for the original project can be played here: https://jwcain.github.io/Hexquisite/ (PC Only)
 A WebGL build  for the level building tool and begging mobile port that I will be demoing can be found here: https://jwcain.github.io/PerBlueExample2Build/ (PC Only)
 
