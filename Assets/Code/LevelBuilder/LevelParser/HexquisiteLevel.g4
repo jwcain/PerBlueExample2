@@ -1,0 +1,14 @@
+grammar HexquisiteLevel;
+level:		version	vector2int walls goals shapes EOF ;
+version: 	'V'INT;
+shapes: 	(shape | keyshape)+;
+keyshape: 	'K' '{' piece+ '}';
+shape: 		'S' '{' piece+ '}';
+goals: 		'G' '{' vector2int+ '}';
+walls: 		'W' '{' vector2int* '}';
+piece: 		anchor | vector2int;
+anchor: 	'A' vector2int ;
+vector2int: '(' INT ',' INT ')';
+INT:		[0-9]+;
+NEWLINE:	[\r\n]+ -> skip;
+WHITESPACE:	(' ' | '\t')+ -> skip;
